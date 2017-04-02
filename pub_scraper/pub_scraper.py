@@ -62,7 +62,7 @@ def main():
     journal_topic_list = settings_dict['journal_and_topics']
     pub_days_ago = int(settings_dict['pub_days_ago'][0])
     sender_email = settings_dict['sender_email'][0]
-    sender_pswd = settings_dict['sender_pswd']
+    sender_pswd = settings_dict['sender_pswd'][0]
 
     # Parse journal_topic_list:
     journal_topic_dict = parse_journal_topics(journal_topic_list)
