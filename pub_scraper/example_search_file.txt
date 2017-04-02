@@ -1,0 +1,40 @@
+# My search file
+# Comment
+
+# Required for using ncbi entrez API
+$ entrez_email_address
+email@host.com
+
+$ send_to_email_address
+email@host.com
+
+$ sender_email
+sender_email@host.com
+
+$ sender_pswd
+sender_password
+
+# Will be searched using [Title/Abstract] flag
+$ search_keywords
+Argonaute
+Ago2
+PRC2
+
+# Note that authors should be formatted '<Lastname> <Initials>'
+$ search_authors
+Greenleaf WJ
+Zamore PD
+Cech T
+Bartel DP
+Buenrostro JD
+Shendure J
+
+# Journal and associated topics should be formatted
+# <Journal title>=(topic1,topic2,topic3)
+$ journal_and_topics
+Nature=(chromatin,sequencing,RNAi)
+Science=(chromain,sequencing,RNAi)
+
+# How many days ago should be considered
+$ pub_days_ago
+3
