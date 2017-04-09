@@ -98,8 +98,8 @@ def main():
 
     # Get the total number of hits:
     total_hits = 0
-    for group, result_dict in all_results_dict:
-        for term, pub_list in result_dict:
+    for group, result_dict in all_results_dict.items():
+        for term, pub_list in result_dict.items():
             total_hits += len(pub_list)
 
     # Now send information by email:
