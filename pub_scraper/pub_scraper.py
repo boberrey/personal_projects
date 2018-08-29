@@ -152,6 +152,8 @@ def parse_search_file(search_file):
                 while True:
                     try:
                         line = f.readline().strip()
+                        if line[0] == '#':
+                            continue
                         if line == '':
                             break
                         settings_dict[key].append(line)
@@ -240,7 +242,6 @@ def construct_email_body(all_results_dict, pub_days_ago):
     </html>
     """
     return '\n'.join([html_header, html_body, html_tail])
-
 
 
 if __name__ == '__main__':
